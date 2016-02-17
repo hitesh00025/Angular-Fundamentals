@@ -1,0 +1,31 @@
+<html ng-app="myApp">
+  <head>
+    <script type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular.js">
+    </script>
+    <script type="text/javascript"
+      src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular-route.js">
+    </script>
+
+    <script type="text/javascript">
+      var app = angular.module('myApp', ['ng', 'ngRoute']);
+
+      app.config(function($routeProvider) {
+        $routeProvider.
+          when('/', {
+            template: '<h1>Home Page</h1><a ng-href="#/about">About</a><h2> Me</h2><a ng-href="#/me">Me</a>'
+          }).
+          when('/about', {
+            template: '<h1>This is hitesh kumar. Software Engineer at PayPal</h1><a ng-href="#/">Back to Home Page</a>'
+          }).
+          when('/me', {
+            template: '<h1>Visit me on Linkedin: https://www.linkedin.com/in/hiteshkumar0025</h1><a ng-href="#/">Back to Home Page</a>'
+          });
+      });
+    </script>
+  </head>
+
+  <body>
+    <div ng-view></div>
+  </body>
+</html>
