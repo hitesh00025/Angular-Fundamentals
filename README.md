@@ -7,6 +7,6 @@ This project contains following:
 
 2) Angular Hello World (Just to get started with Angular).
 
-3) Services,
+3) Angular Services.
 
 4) SPA concept (Single page app) with Angular.
